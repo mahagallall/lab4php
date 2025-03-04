@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <label>Room Number:</label>
+        <select name="room_number" required>
+            <option value="Application1">Application1</option>
+            <option value="Application2">Application2</option>
+            <option value="Cloud">Cloud</option>
+        </select><br><br>
+
+        <label>Profile Picture:</label>
+        <input type="file" name="profile_picture" accept="image/*" required>
+
+        <br>
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <br>
+    <br>
+    <p>Already registered? <a href="login.html">Login here</a></p>
+</body>
+</html>
